@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/new/qss">
+        <file>style.qss</file>
+        <file>style2.qss</file>
+        <file>blue.css</file>
+    </qresource>
+    <qresource prefix="/new/icon">
+        <file>icon/login.png</file>
+        <file>icon/my.png</file>
+        <file>icon/order.png</file>
+        <file>icon/register.png</file>
+        <file>icon/station.png</file>
+        <file>icon/ticket.png</file>
+        <file>icon/train.png</file>
+        <file>icon/railway.png</file>
+        <file>icon/删除.png</file>
+        <file>icon/添加.png</file>
+        <file>icon/修改.png</file>
+        <file>icon/密码.png</file>
+        <file>icon/取消.png</file>
+        <file>icon/确定.png</file>
+        <file>icon/查询订单.png</file>
+        <file>icon/改签.png</file>
+        <file>icon/退票.png</file>
+        <file>icon/支付.png</file>
+        <file>icon/取消订单.png</file>
+        <file>icon/搜索.png</file>
+        <file>icon/提交订单.png</file>
+        <file>icon/添加乘车人.png</file>
+        <file>icon/A_square_字母a.png</file>
+        <file>icon/B_square_字母b.png</file>
+        <file>icon/C_square_字母c.png</file>
+        <file>icon/D_square_字母d.png</file>
+        <file>icon/E_square_字母e.png</file>
+        <file>icon/F_square_字母f.png</file>
+    </qresource>
+    <qresource prefix="/new/background">
+        <file>background/bg.jpg</file>
+        <file>background/bg2.png</file>
+    </qresource>
+</RCC>

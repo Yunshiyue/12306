@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1297</width>
+    <height>665</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1281</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Tab 1</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="login"/>
+   <addaction name="register_2"/>
+   <addaction name="ticket"/>
+   <addaction name="Train"/>
+   <addaction name="station"/>
+   <addaction name="order"/>
+   <addaction name="information"/>
+  </widget>
+  <action name="login">
+   <property name="icon">
+    <iconset resource="qss.qrc">
+     <normaloff>:/new/icon/icon/login.png</normaloff>:/new/icon/icon/login.png</iconset>
+   </property>
+   <property name="text">
+    <string>登录</string>
+   </property>
+  </action>
+  <action name="ticket">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qss.qrc">
+     <normaloff>:/new/icon/icon/ticket.png</normaloff>:/new/icon/icon/ticket.png</iconset>
+   </property>
+   <property name="text">
+    <string>查询车票</string>
+   </property>
+  </action>
+  <action name="station">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qss.qrc">
+     <normaloff>:/new/icon/icon/station.png</normaloff>:/new/icon/icon/station.png</iconset>
+   </property>
+   <property name="text">
+    <string>车站</string>
+   </property>
+  </action>
+  <action name="order">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qss.qrc">
+     <normaloff>:/new/icon/icon/order.png</normaloff>:/new/icon/icon/order.png</iconset>
+   </property>
+   <property name="text">
+    <string>订单</string>
+   </property>
+  </action>
+  <action name="information">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qss.qrc">
+     <normaloff>:/new/icon/icon/my.png</normaloff>:/new/icon/icon/my.png</iconset>
+   </property>
+   <property name="text">
+    <string>个人信息</string>
+   </property>
+  </action>
+  <action name="Train">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qss.qrc">
+     <normaloff>:/new/icon/icon/train.png</normaloff>:/new/icon/icon/train.png</iconset>
+   </property>
+   <property name="text">
+    <string>车次</string>
+   </property>
+  </action>
+  <action name="register_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qss.qrc">
+     <normaloff>:/new/icon/icon/register.png</normaloff>:/new/icon/icon/register.png</iconset>
+   </property>
+   <property name="text">
+    <string>注册</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="qss.qrc"/>
+ </resources>
+ <connections/>
+</ui>

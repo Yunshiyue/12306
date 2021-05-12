@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Order</class>
+ <widget class="QWidget" name="Order">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1310</width>
+    <height>784</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <spacer name="horizontalSpacer_4">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>424</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>查询</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>79</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="search_type_combo_box">
+        <item>
+         <property name="text">
+          <string>全部</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>未付款</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>已完成</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>已取消</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>78</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="search_button">
+        <property name="text">
+         <string>查询</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qss.qrc">
+          <normaloff>:/new/icon/icon/查询订单.png</normaloff>:/new/icon/icon/查询订单.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>79</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer_5">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>316</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>订单</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTableWidget" name="order_table">
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <column>
+         <property name="text">
+          <string>订单号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>订单时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>总价</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>状态</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pay_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>支付订单</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qss.qrc">
+          <normaloff>:/new/icon/icon/支付.png</normaloff>:/new/icon/icon/支付.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="cancel_order_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>取消订单</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qss.qrc">
+          <normaloff>:/new/icon/icon/取消订单.png</normaloff>:/new/icon/icon/取消订单.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>订单信息</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QTableWidget" name="info_table">
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <column>
+         <property name="text">
+          <string>姓名</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>身份证号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>类型</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>车次号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>出发站</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>到达站</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>出发日期</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>车厢号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>座位号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>座位类型</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>价格</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>状态</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="change_ticket_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>改签</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qss.qrc">
+          <normaloff>:/new/icon/icon/改签.png</normaloff>:/new/icon/icon/改签.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="cancel_ticket_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>退票</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qss.qrc">
+          <normaloff>:/new/icon/icon/退票.png</normaloff>:/new/icon/icon/退票.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pay_ticket_button">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>付款</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qss.qrc">
+          <normaloff>:/new/icon/icon/支付.png</normaloff>:/new/icon/icon/支付.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="qss.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,18 @@
+﻿  Moc'ing information.h...
+  Moc'ing train_socket.h...
+  change_password_dialog.cpp
+  information.cpp
+  login.cpp
+  main.cpp
+  main_window.cpp
+  register.cpp
+  train_socket.cpp
+D:\6.C++\12306\12306\information.cpp(82,63): warning C4100: “column”: 未引用的形参
+D:\6.C++\12306\12306\information.cpp(82,54): warning C4100: “row”: 未引用的形参
+  moc_change_password_dialog.cpp
+  moc_information.cpp
+  moc_login.cpp
+  moc_main_window.cpp
+  moc_register.cpp
+  moc_train_socket.cpp
+  12306.vcxproj -> D:\6.C++\12306\12306\debug\12306.exe

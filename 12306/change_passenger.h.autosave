@@ -1,0 +1,28 @@
+﻿#ifndef CHANGE_PASSENGER_H
+#define CHANGE_PASSENGER_H
+
+#include <QDialog>
+#include <QMessageBox>
+#include "train_socket.h"
+
+namespace Ui {
+class ChangePassenger;
+}
+
+class ChangePassenger : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit ChangePassenger(QWidget *parent = 0, id_number);
+    ~ChangePassenger();
+
+private slots:
+    void on_pushButton_clicked();
+    
+private:
+    Ui::ChangePassenger *ui;
+    QString id_number;
+};
+
+#endif // CHANGE_PASSENGER_H

@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Transfer</class>
+ <widget class="QWidget" name="Transfer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1408</width>
+    <height>906</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_12">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>查询结果</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="0">
+       <widget class="QTableWidget" name="transfer_table">
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <column>
+         <property name="text">
+          <string>方案</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>车次号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>出发站</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>发车时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>到达站</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>到达时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>历时</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>商务</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>一等</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>二等</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>总历时</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="date_label">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>方正经黑简体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>信息</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_11">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="title">
+         <string>第一程车票</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>车次号</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_train_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="ticket_train_edit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>出发站</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_departure_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="ticket_departure_edit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>105</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>发车时间</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_departure_time_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="ticket_departure_time_edit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>97</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>到达站</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_arrival_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="ticket_arrival_edit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>到达时间</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_arrival_time_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="ticket_arrival_time_edit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="title">
+         <string>第二程车票</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>车次号</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_train_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="ticket_train_edit_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>出发站</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_departure_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="ticket_departure_edit_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="horizontalSpacer_11">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>105</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>发车时间</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_departure_time_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLineEdit" name="ticket_departure_time_edit_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <spacer name="horizontalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>97</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>到达站</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_arrival_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="ticket_arrival_edit_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>到达时间</string>
+           </property>
+           <property name="buddy">
+            <cstring>ticket_arrival_time_edit</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLineEdit" name="ticket_arrival_time_edit_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>订单信息</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_7">
+           <property name="title">
+            <string>乘车人</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>乘车人</string>
+              </property>
+              <property name="buddy">
+               <cstring>passenger_widget</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QTableWidget" name="passenger_widget">
+              <property name="font">
+               <font>
+                <family>黑体</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <column>
+               <property name="text">
+                <string>姓名</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>身份证号</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>类型</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="choose_passenger_button">
+              <property name="text">
+               <string>选择乘车人</string>
+              </property>
+              <property name="icon">
+               <iconset resource="qss.qrc">
+                <normaloff>:/new/icon/icon/添加乘车人.png</normaloff>:/new/icon/icon/添加乘车人.png</iconset>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="groupBox_8">
+           <property name="title">
+            <string>座位</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_9">
+              <property name="title">
+               <string>第一程</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>座位类型</string>
+                 </property>
+                 <property name="buddy">
+                  <cstring>seat_type_combo_box</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="seat_type_combo_box">
+                 <item>
+                  <property name="text">
+                   <string>二等</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>一等</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>商务</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QGroupBox" name="groupBox_3">
+                 <property name="title">
+                  <string>选座</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_14">
+                    <property name="text">
+                     <string>第2排</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QCheckBox" name="A2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/A_square_字母a.png</normaloff>:/new/icon/icon/A_square_字母a.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QCheckBox" name="B2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/B_square_字母b.png</normaloff>:/new/icon/icon/B_square_字母b.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QCheckBox" name="C2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/C_square_字母c.png</normaloff>:/new/icon/icon/C_square_字母c.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="5">
+                   <widget class="QCheckBox" name="D2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/D_square_字母d.png</normaloff>:/new/icon/icon/D_square_字母d.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="6">
+                   <widget class="QCheckBox" name="F2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/F_square_字母f.png</normaloff>:/new/icon/icon/F_square_字母f.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_10">
+                    <property name="text">
+                     <string>靠窗</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4">
+                   <widget class="QLabel" name="label_12">
+                    <property name="text">
+                     <string>过道</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="7">
+                   <widget class="QLabel" name="label_11">
+                    <property name="text">
+                     <string>靠窗</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_13">
+                    <property name="text">
+                     <string>第1排</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QCheckBox" name="A1">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/A_square_字母a.png</normaloff>:/new/icon/icon/A_square_字母a.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QCheckBox" name="B1">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/B_square_字母b.png</normaloff>:/new/icon/icon/B_square_字母b.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QCheckBox" name="C1">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/C_square_字母c.png</normaloff>:/new/icon/icon/C_square_字母c.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="5">
+                   <widget class="QCheckBox" name="D1">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/D_square_字母d.png</normaloff>:/new/icon/icon/D_square_字母d.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="6">
+                   <widget class="QCheckBox" name="F1">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/F_square_字母f.png</normaloff>:/new/icon/icon/F_square_字母f.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox_10">
+              <property name="title">
+               <string>第二程</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_20">
+                 <property name="text">
+                  <string>座位类型</string>
+                 </property>
+                 <property name="buddy">
+                  <cstring>seat_type_combo_box</cstring>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QComboBox" name="seat_type_combo_box_2">
+                 <item>
+                  <property name="text">
+                   <string>二等</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>一等</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>商务</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QGroupBox" name="groupBox_11">
+                 <property name="title">
+                  <string>选座</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>第2排</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QCheckBox" name="A2_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/A_square_字母a.png</normaloff>:/new/icon/icon/A_square_字母a.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QCheckBox" name="B2_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/B_square_字母b.png</normaloff>:/new/icon/icon/B_square_字母b.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QCheckBox" name="C2_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/C_square_字母c.png</normaloff>:/new/icon/icon/C_square_字母c.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="5">
+                   <widget class="QCheckBox" name="D2_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/D_square_字母d.png</normaloff>:/new/icon/icon/D_square_字母d.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="6">
+                   <widget class="QCheckBox" name="F2_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/F_square_字母f.png</normaloff>:/new/icon/icon/F_square_字母f.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>靠窗</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="4">
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>过道</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="7">
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>靠窗</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>第1排</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QCheckBox" name="A1_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/A_square_字母a.png</normaloff>:/new/icon/icon/A_square_字母a.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QCheckBox" name="B1_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/B_square_字母b.png</normaloff>:/new/icon/icon/B_square_字母b.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QCheckBox" name="C1_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/C_square_字母c.png</normaloff>:/new/icon/icon/C_square_字母c.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="5">
+                   <widget class="QCheckBox" name="D1_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/D_square_字母d.png</normaloff>:/new/icon/icon/D_square_字母d.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="6">
+                   <widget class="QCheckBox" name="F1_2">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="qss.qrc">
+                      <normaloff>:/new/icon/icon/F_square_字母f.png</normaloff>:/new/icon/icon/F_square_字母f.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>24</width>
+                      <height>24</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="submit_order_button">
+        <property name="text">
+         <string>提交订单</string>
+        </property>
+        <property name="icon">
+         <iconset resource="qss.qrc">
+          <normaloff>:/new/icon/icon/提交订单.png</normaloff>:/new/icon/icon/提交订单.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="qss.qrc"/>
+ </resources>
+ <connections/>
+</ui>
